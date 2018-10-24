@@ -1,0 +1,51 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tx_nomeLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Itens no Carrinho"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+               <TextView
+                   android:layout_below="@id/tx_nomeLabel"
+                   android:id="@+id/tx_valor"
+                   android:text="Valor: 0"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+         </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/botao"
+        android:layout_below="@id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:onClick="Confirmar"/>
+
+    <ListView
+        android:layout_below="@id/botao"
+        android:id="@+id/carrinho_lista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </ListView>
+
+
+
+</RelativeLayout>
+
+
+

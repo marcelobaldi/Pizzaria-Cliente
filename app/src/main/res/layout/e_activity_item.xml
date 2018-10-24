@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/SegundaTela_Imagem"
+        android:src="@drawable/pizza1"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/SegundaTela_Nome"
+        android:text="Pizza - Mussarela"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/SegundaTela_Descricao"
+        android:text="Musssarela, Molho Artezanal e Azeitonas Pretas"
+        android:textSize="16dp"
+        android:textStyle="italic"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="R$"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SegundaTela_Preco"
+            android:layout_width="154dp"
+            android:layout_height="39dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            android:text="50,00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/SegundaTela_check_Borda"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Com Borda de Catupiry  R$ 5,00"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="35dp"
+            android:text="Quantidade"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/SegundaTela_bt_Mais"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/maisx" />
+
+        <TextView
+            android:id="@+id/SegundaTela_Quantidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="30dp"
+            android:text="99"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/SegundaTela_bt_Menos"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/menox" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Total R$"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/SegundaTela_Total"
+            android:layout_width="154dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="40dp"
+            android:text="50,00"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bt_Add_Carrinho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar ao Carrinho"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/carrinho"
+        android:layout_gravity="right"
+        android:onClick="addCarinho"/>
+
+</LinearLayout>
